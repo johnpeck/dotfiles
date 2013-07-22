@@ -93,6 +93,11 @@ oldpath=$PATH
 rmpath=":/cygdrive/c/MKS/mksnt"
 PATH=${oldpath//"$rmpath"/}
 
+# Fix paths for Octave
+oldpath=$PATH
+addpath="/usr/lib/lapack"
+PATH="$oldpath"":$addpath"
+
 # Increase priority of /usr/bin
 oldpath=$PATH
 rmpath=":/usr/bin"
@@ -124,5 +129,7 @@ PATH=":$addpath""$oldpath"
 
 # Set DISPLAY
 export DISPLAY=:0
+
+# Add path for dotfiles
 export PATH=$PATH:/home/john/.dotfiles/bin
-export PATH=$PATH:/home/john/.dotfiles/bin
+
