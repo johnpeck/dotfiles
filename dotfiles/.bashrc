@@ -98,6 +98,11 @@ oldpath=$PATH
 addpath="/usr/lib/lapack"
 PATH="$oldpath"":$addpath"
 
+# Add path for poole (static websites)
+oldpath=$PATH
+addpath="/usr/share/obensonne-poole-625d57a5d07a"
+PATH="$oldpath"":$addpath"
+
 # Increase priority of /usr/bin
 oldpath=$PATH
 rmpath=":/usr/bin"
