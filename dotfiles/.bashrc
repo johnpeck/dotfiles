@@ -86,6 +86,7 @@ export EDITOR=emacs
 # Set up bashmarks (https://github.com/twerth/bashmarks)
 # source /usr/local/bin/bashmarks.sh
 
+
 # -------------------------- Fix up $PATH ------------------------------
 
 # Remove path to MKS make
@@ -137,9 +138,12 @@ oldpath=$PATH
 addpath="/cygdrive/c/Program Files (x86)/Inkscape"
 PATH=":$addpath""$oldpath"
 
+# Add path for dotfiles
+oldpath=$PATH
+addpath=$HOME/.dotfiles/bin
+PATH="$oldpath"":$addpath"
+
 # Set DISPLAY
 export DISPLAY=:0
 
-# Add path for dotfiles
-export PATH=$PATH:/home/john/.dotfiles/bin
 
