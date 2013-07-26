@@ -103,6 +103,11 @@ oldpath=$PATH
 addpath="/usr/share/obensonne-poole-625d57a5d07a"
 PATH="$oldpath"":$addpath"
 
+# Add path for WinAVR
+oldpath=$PATH
+addpath="/cygdrive/c/WinAVR-20100110/bin"
+PATH="$oldpath"":$addpath"
+
 # Increase priority of /usr/bin
 oldpath=$PATH
 rmpath=":/usr/bin"
