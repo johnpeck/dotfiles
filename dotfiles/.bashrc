@@ -94,6 +94,11 @@ oldpath=$PATH
 addpath="/usr/share/obensonne-poole-625d57a5d07a"
 PATH="$oldpath"":$addpath"
 
+# Add path for evince
+oldpath=$PATH
+addpath="/cygdrive/c/Program Files (x86)/Evince-2.32.0.145/bin"
+PATH="$oldpath"":$addpath"
+
 # Add path for WinAVR
 oldpath=$PATH
 addpath="/cygdrive/c/WinAVR-20100110/bin"
