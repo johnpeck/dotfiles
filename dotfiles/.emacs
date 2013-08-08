@@ -19,6 +19,9 @@
 (require 'printing)
 (pr-update-menus)
 
+;; Unique buffer names
+(require 'uniquify)
+
 ;; Setting up autocomplete
 ;;(load "popup")
 
