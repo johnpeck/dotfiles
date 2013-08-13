@@ -2,6 +2,10 @@
 ;; this is default dir for extra packages
 (add-to-list 'load-path "~/.emacs.d/")
 
+;; Set up desktop
+(setq desktop-path '("~/.emacs.d/"))
+(desktop-save-mode 1)
+
 ;; Set up package archives
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
@@ -54,8 +58,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(desktop-save-mode t)
  '(inhibit-startup-screen t)
- '(org-agenda-files (quote ("~/tasks.org"))))
+ '(org-agenda-files (quote ("~/tasks.org")))
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
