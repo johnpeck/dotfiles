@@ -11,10 +11,6 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-;; Configure auto completion
-;;(require 'auto-complete)
-;;(require 'auto-complete-config)
-;;(add-to-list 'ac-modes 'LaTeX-mode)
 
 ;; Setting up TAGS
 (setq tags-revert-without-query 1)
