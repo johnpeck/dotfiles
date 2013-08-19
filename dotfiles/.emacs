@@ -22,12 +22,6 @@
 ;; Unique buffer names
 (require 'uniquify)
 
-;; Setting up autocomplete
-;;(load "popup")
-
-;; Frame commands
-;;(load "frame-cmds")
-
 ;; For YAML mode
 ;;(require 'yaml-mode)
 ;;(add-to-list 'auto-mode-alist '("\\.yaml" . yaml-mode))
@@ -48,6 +42,25 @@
 	    (auto-fill-mode 1)
 	    (if (eq window-system 'x)
 		(font-lock-mode 1))))
+		
+;; Set up email
+(setq user-mail-address "john@johnpeck.info")
+(setq mail-host-address "mymail.brinkster.com")
+
+(setq mail-default-headers
+           "Reply-to: john@johnpeck.info\n")
+
+(setq smtpmail-debug-info t)
+(setq smtpmail-debug-verb t)
+
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-default-smtp-server "mymail.brinkster.com"
+      smtpmail-local-domain "mymail.brinkster.com"
+      smtpmail-smtp-server "mymail.brinkster.com"
+      smtpmail-smtp-service 25)
+		
+		
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
