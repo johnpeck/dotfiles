@@ -22,7 +22,7 @@
 	     '(nnimap "brinkster"
 		      (nnimap-address "mail.johnpeck.info")))
 
-
+(setq user-full-name "John Peck")
 (setq user-mail-address "john@johnpeck.info") 
 (setq mail-host-address "mymail.brinkster.com")
 
