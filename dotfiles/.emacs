@@ -2,6 +2,11 @@
 ;; this is default dir for extra packages
 (add-to-list 'load-path "~/.emacs.d/")
 
+;; Initial frame size
+(add-to-list 'default-frame-alist '(height . 24))
+(add-to-list 'default-frame-alist '(width . 200))
+
+
 ;; Set up desktop
 (setq desktop-path '("~/.emacs.d/"))
 (desktop-save-mode 1)
@@ -69,7 +74,7 @@
  ;; If there is more than one, they won't work right.
  '(desktop-save-mode t)
  '(inhibit-startup-screen t)
- '(org-agenda-files (quote ("~/tasks.org")))
+ '(org-agenda-files (quote ("~/projects/intertech/wireless/progress.org" "~/projects/intertech/turbulator/progress.org" "~/tasks.org")))
  '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
