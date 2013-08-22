@@ -76,6 +76,9 @@ export EDITOR=emacs
 # Set up bashmarks (https://github.com/twerth/bashmarks)
 # source /usr/local/bin/bashmarks.sh
 
+# ---------------------- Configure ssh-agent ---------------------------
+source ~/.keychain/$HOSTNAME-sh
+
 # ------------------- Configure xterm transparency ---------------------
 
 [ -n "$XTERM_VERSION" ] && transset-df -a 0.6 >/dev/null
